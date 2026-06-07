@@ -1,12 +1,12 @@
 <?php
 
-$host = "mysql.railway.internal"; 
-$user = "root"; 
-$pass = "AoCuTLCfUPvvpitvGkxHZqRuEVVHWLqE"; 
-$db   = "railway"; 
-$port = "3306"; 
+$MYSQLHOST = "mysql.railway.internal"; 
+$MYSQLUSER = "root"; 
+$MYSQLPASSWORD = "AoCuTLCfUPvvpitvGkxHZqRuEVVHWLqE"; 
+$MYSQLDATABASE= "railway"; 
+$MYSQLPORT = "3306"; 
 
-$conn = mysqli_connect($host, $user, $pass, $db, $port);
+$conn = mysqli_connect($MYSQLHOST, $MYSQLUSER, $MYSQLPASSWORD, $MYSQLDATABASE, $MYSQLPORT);
 
 if (!$conn) {
     die("Koneksi ke database gagal: " . mysqli_connect_error());

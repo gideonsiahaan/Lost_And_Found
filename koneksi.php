@@ -4,10 +4,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$host = "";
+$host = "sql313.infinityfree.com";
 $user = "root";
 $pass = "DgGuPhJz6ZkJphB";
-$db = "vercel";
+$db = "f0_42988058_lostfound";
 $port = "3306";
 
 $conn = mysqli_connect($host, $user, $pass, $db, $port);
